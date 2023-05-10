@@ -5,7 +5,7 @@
 import { Request, Response } from "express";
 import { handleHttp } from "../utils/error.handle";
 
-const getItem = (req:Request, res:Response) =>{
+const getBlog = (req:Request, res:Response) =>{
 	try {
 		
 	} catch (error) {
@@ -15,7 +15,7 @@ const getItem = (req:Request, res:Response) =>{
 	}
 };
 
-const getItems=(req:Request, res:Response)=>{
+const getBlogs=(req:Request, res:Response)=>{
 	try {
 		
 	} catch (error) {
@@ -25,7 +25,7 @@ const getItems=(req:Request, res:Response)=>{
 	}
 };
 
-const updateItem= (req:Request, res:Response) => {
+const updateBlog= (req:Request, res:Response) => {
 	try {
 		
 	} catch (error) {
@@ -35,7 +35,7 @@ const updateItem= (req:Request, res:Response) => {
 	}
 };
 
-const postItem = (req:Request, res:Response)=>{
+const postBlog = (req:Request, res:Response)=>{
 	try {
 		const {body} = req;
 		res.send(body);
@@ -47,7 +47,7 @@ const postItem = (req:Request, res:Response)=>{
 	}
 };
 
-const deleteItem=(req:Request, res:Response)=>{
+const deleteBlog=(req:Request, res:Response)=>{
 	try {
 		
 	} catch (error) {
@@ -57,4 +57,4 @@ const deleteItem=(req:Request, res:Response)=>{
 	}
 };
 
-export {getItem, getItems, updateItem, postItem, deleteItem};
+export {getBlog, getBlogs, updateBlog, postBlog, deleteBlog};
