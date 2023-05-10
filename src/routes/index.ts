@@ -27,6 +27,7 @@ readdirSync(PATH_ROUTER).filter((fileName) => {
 
 		//this is typeScript, dinamic importation
 		import(`./${cleanName}`).then((moduleRouter)=>{
+			console.log(moduleRouter);
 			console.log(`se esta cargando la ruta... /${cleanName}`);
 			router.use(`/${cleanName}` , moduleRouter.router);
 			

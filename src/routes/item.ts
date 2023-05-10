@@ -1,13 +1,21 @@
 //function that give us exppress to manage the routes
-import { Request, Response, Router } from "express";
+import { Router } from "express";
+import { deleteItem, getItem, getItems, postItem, updateItem } from "../controllers/item";
 
 const router = Router();
 
 /**
  * http://localhost:4000/items [get]
  */
-router.get("/", (req:Request, res:Response) => {
-	res.send({data:"modelos"});
-});
+router.get("/", getItem);
+
+router.get("/:id" , getItems);
+
+router.post("/", postItem);
+
+router.put("/:id", updateItem);
+
+router.delete("/:id",deleteItem);
+
 
 export {router};
