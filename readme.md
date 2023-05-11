@@ -21,4 +21,4 @@ npm i @types/express @types/cors @types/dotenv @type/multer @type/mongoose -D
 
 ## video source
 https://www.youtube.com/watch?v=T1QFGwOnQxQ&list=WL&index=34&t=30s
-34:00
+1:08

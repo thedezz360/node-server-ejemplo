@@ -7,9 +7,9 @@ const router = Router();
 /**
  * http://localhost:4000/items [get]
  */
-router.get("/", getItem);
+router.get("/" , getItems);
 
-router.get("/:id" , getItems);
+router.get("/:id", getItem);
 
 router.post("/", postItem);
 
